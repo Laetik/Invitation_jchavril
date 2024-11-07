@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découverte du Bénin</title>
+    <style>
+        /* Styles de la page */
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Arrière-plan en image */
+        body {
+            background-image: url('Benin/chavriliens.jpg'); /* Remplacez par le chemin de votre image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+        /* Conteneur central */
+        .container {
+            background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent pour améliorer la lisibilité */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        /* Bande défilante */
+        .slider {
+            overflow: hidden;
+            width: 100%;
+            max-width: 800px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .slider-track {
+            display: flex;
+            animation: scroll 20s linear infinite;
+        }
+
+        .slider img {
+            width: 200px; /* Largeur des images */
+            height: auto;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        /* Animation défilante */
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Devinette chavrilienne</h1>
+        <h2>Tu as trouvé? Bravooooo</h2>
+        <p>Nous avons hate de vous rencontrer pour partager ce moment, découvrir le Bénin et plonger dans la richesse de la culture béninoise.</p>
+    </div>
+
+    <!-- Bande défilante d'images -->
+    <div class="slider">
+        <div class="slider-track">
+            <!-- Remplacez les liens ci-dessous par les URLs de vos images du Bénin -->
+            <img src="Benin/drap_benin.jpg" alt="Image du Bénin 1">
+            <img src="Benin/Destination-Afrique-lieux-tourisme-au-Benin.jpg" alt="Image du Bénin 2">
+            <img src="Benin/Lhistoire-de-la-porte-du-non-retour-a-Ouidah.jpg" alt="Image du Bénin 3">
+            <img src="Benin/statue_amazone.jpg" alt="Image du Bénin 4">
+            <img src="Benin/80056227-57855317.jpg" alt="Image du Bénin 5">
+            <!-- Dupliquez les images pour assurer une continuité de l'animation -->
+            <img src="Benin/drap_benin.jpg" alt="Image du Bénin 1">
+            <img src="Benin/Destination-Afrique-lieux-tourisme-au-Benin.jpg" alt="Image du Bénin 2">
+            <img src="Benin/Lhistoire-de-la-porte-du-non-retour-a-Ouidah.jpg" alt="Image du Bénin 3">
+            <img src="Benin/statue_amazone.jpg" alt="Image du Bénin 4">
+            <img src="Benin/80056227-57855317.jpg" alt="Image du Bénin 5">
+           
+        </div>
+    </div>
+
+</body>
+</html>
